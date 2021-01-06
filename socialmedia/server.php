@@ -32,7 +32,8 @@ $table2 = mysqli_query($db, $sql2);
 $sql3 = "CREATE TABLE IF NOT EXISTS globalchat(
     id INT(20) AUTO_INCREMENT PRIMARY KEY,
     sender VARCHAR(255) NOT NULL,
-    message VARCHAR(255) NOT NULL
+    message VARCHAR(255) NOT NULL,
+    image VARCHAR(255) NOT NULL
 )";
 $table3 = mysqli_query($db, $sql3);
 
@@ -220,6 +221,17 @@ if (isset($_POST['send_message'])) {
 // global messages
 if (isset($_POST['global_stories'])) {
     $sender = $_SESSION['username'];
+    $image_name = $_FILES['image']['name'];
+    $image_type = $_FILES['image']['type'];
+    $image_size = $_FILES['image']['size'];
+    $image_tem_loc = $_FILES['image']['tmp_name'];
+    $image_store = "upload/" . $image_name;
+
+    move_uploaded_file($image_tem_loc, $image_store);
+
+
+
+
     $stories = @mysqli_real_escape_string($db, $_POST['stories']);
 
     if (empty($sender)) {
@@ -230,7 +242,7 @@ if (isset($_POST['global_stories'])) {
     }
 
     if (count($errors) === 0) {
-        $query = "INSERT INTO globalchat (sender, message) VALUES ('$sender','$stories')";
+        $query = "INSERT INTO globalchat (sender, message, image) VALUES ('$sender','$stories', '$image_store')";
         $results = mysqli_query($db, $query);
         if ($results) {
             array_push($errors, "message sent");
