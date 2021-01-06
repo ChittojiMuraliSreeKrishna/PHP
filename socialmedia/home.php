@@ -42,10 +42,11 @@ if (isset($_GET['logout'])) {
     </nav>
     <div class="alert"><?php include('errors.php') ?></div>
     <section class="container">
-        <form action="home.php" method="post">
+        <form action="home.php" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <textarea name="stories" maxlength="255" rows="5" class="form-control" placeholder="type your text here"></textarea>
             </div>
+            <input type="file" name="image">
             <button type="submit" name="global_stories" class="btn btn-outline-success">Post</button>
         </form>
         <?php
@@ -59,6 +60,9 @@ if (isset($_GET['logout'])) {
                         <?php echo $result['sender']; ?>
                     </div>
                     <div class="card-body">
+                        <img src="<?php echo $result['image']; ?>" alt="image">
+                    </div>
+                    <div class="card-footer">
                         <?php echo $result['message']; ?>
                     </div>
                 </div>
