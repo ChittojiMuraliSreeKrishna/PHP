@@ -1,4 +1,4 @@
-# to use this first we have to create a database called socialmedia using phpmyadmin
+# to use this first we have to create a database called socialmedia using phpmyadmin && this have only onepage for all operation named server.php
 # this has three tables 
 ## users
 >for login signup and profile 
