@@ -31,6 +31,6 @@ header('location: home.php');
   <tr><td>
 <img src="https://user-images.githubusercontent.com/62329524/104123593-fd266c00-5343-11eb-8193-188b53286d5b.png" width="500" height="500" />
     </td><td>
-<img src="https://user-images.githubusercontent.com/62329524/104123582-e97b0580-5343-11eb-9e56-e9a3d33288f9.png" width="250" height="250" />
+<img src="https://user-images.githubusercontent.com/62329524/104123582-e97b0580-5343-11eb-9e56-e9a3d33288f9.png" width="500" height="500" />
     </td></tr>
   </table>
