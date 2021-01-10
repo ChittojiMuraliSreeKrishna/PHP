@@ -24,11 +24,12 @@ header('location: home.php');
 <table>
   <tr>
     <td>
-<img src="https://user-images.githubusercontent.com/62329524/104124247-b0449480-5347-11eb-8f7a-66e5c5409020.png" width="250" height="250" />
+<img src="https://user-images.githubusercontent.com/62329524/104124247-b0449480-5347-11eb-8f7a-66e5c5409020.png" width="500" height="500" />
       </td><td>
-<img src="https://user-images.githubusercontent.com/62329524/104124250-b2a6ee80-5347-11eb-9b91-d1fe83b0233d.png" width="250" height="250" />
-    </td><td>
-<img src="https://user-images.githubusercontent.com/62329524/104123593-fd266c00-5343-11eb-8193-188b53286d5b.png" width="250" height="250" />
+<img src="https://user-images.githubusercontent.com/62329524/104124250-b2a6ee80-5347-11eb-9b91-d1fe83b0233d.png" width="500" height="500" />
+    </td></tr>
+  <tr><td>
+<img src="https://user-images.githubusercontent.com/62329524/104123593-fd266c00-5343-11eb-8193-188b53286d5b.png" width="500" height="500" />
     </td><td>
 <img src="https://user-images.githubusercontent.com/62329524/104123582-e97b0580-5343-11eb-9e56-e9a3d33288f9.png" width="250" height="250" />
     </td></tr>
