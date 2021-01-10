@@ -2,6 +2,7 @@
 >this is a basic todo list which can post a new todo or update/delete the previous todo
 >this can also delete the todo if update when input is empty
 !for styling i am using bootstrap5
+![todo](https://user-images.githubusercontent.com/62329524/104123501-73769e80-5343-11eb-8f61-68ca48f09ffc.png)
 ## database name
 >todomanager
 ### to display the todos in the database
